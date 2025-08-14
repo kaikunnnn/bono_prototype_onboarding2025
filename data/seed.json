@@ -1,0 +1,148 @@
+{
+  "course": {
+    "id": "starter-uiux",
+    "title": "UI/UXスターターレッスン：14日で"手を動かす"基礎体験",
+    "description": "ユーザー理解 → 要件設定 → UIモデリング → ビジュアル制作を、ノックで体験するコース。",
+    "tags": ["UX", "情報設計", "UI", "Figma"],
+    "author": "BONO",
+    "chapters": [
+      "trace-01","trace-02",
+      "ux-quiz-01","ux-fill-01",
+      "ia-msc-01","ia-order-01",
+      "ui-model-01","visual-01",
+      "state-01","compare-01"
+    ]
+  },
+  "chapters": [
+    {
+      "slug": "trace-01",
+      "title": "ベースのUIトレース①：ホバーと構造",
+      "goal": "ダメUIを一緒にリデザインし、使いやすさ×見た目の両立を体感する",
+      "timeEstimate": 8,
+      "prerequisites": ["Figma"],
+      "flowStage": ["UIモデリング","ビジュアル"],
+      "checklist": ["ホバーを入れた","優先度と構造を反映","見た目を整えた"],
+      "assets": [{"type":"figma","url":"https://figma.com/file/dummy-trace-01"}],
+      "isFree": true,
+      "nextSlug": "trace-02",
+      "prevSlug": null
+    },
+    {
+      "slug": "trace-02",
+      "title": "ベースのUIトレース②：見た目の統一",
+      "goal": "タイポ・配色・余白の一貫性を通して"整える"感覚を掴む",
+      "timeEstimate": 8,
+      "prerequisites": ["Figma"],
+      "flowStage": ["ビジュアル"],
+      "checklist": ["タイポ階層適用","配色トークン適用","8pxグリッド適用"],
+      "assets": [{"type":"figma","url":"https://figma.com/file/dummy-trace-02"}],
+      "isFree": true,
+      "nextSlug": "ux-quiz-01",
+      "prevSlug": "trace-01"
+    },
+    {
+      "slug": "ux-quiz-01",
+      "title": "ユーザー理解：4択クイズで視点切替",
+      "goal": "ユーザーのゴールとUIの関係をクイズで体験する",
+      "timeEstimate": 6,
+      "prerequisites": [],
+      "flowStage": ["ユーザー理解"],
+      "checklist": ["クイズに回答","学びを50字でメモ"],
+      "assets": [],
+      "isFree": true,
+      "nextSlug": "ux-fill-01",
+      "prevSlug": "trace-02"
+    },
+    {
+      "slug": "ux-fill-01",
+      "title": "ユーザー理解：穴埋めで優先判断",
+      "goal": ""使いやすさ/価値をつくる"の優先度を場面別に判断する",
+      "timeEstimate": 6,
+      "prerequisites": [],
+      "flowStage": ["ユーザー理解"],
+      "checklist": ["穴埋め完了","選択根拠を50字でメモ"],
+      "assets": [],
+      "isFree": true,
+      "nextSlug": "ia-msc-01",
+      "prevSlug": "ux-quiz-01"
+    },
+    {
+      "slug": "ia-msc-01",
+      "title": "情報設計：MSC仕分け",
+      "goal": "Must/Should/Could に要素を仕分けて優先度を可視化する",
+      "timeEstimate": 7,
+      "prerequisites": [],
+      "flowStage": ["要件"],
+      "checklist": ["MSC仕分け完了","最重要要素を1つ選ぶ"],
+      "assets": [],
+      "isFree": true,
+      "nextSlug": "ia-order-01",
+      "prevSlug": "ux-fill-01"
+    },
+    {
+      "slug": "ia-order-01",
+      "title": "情報設計：並び順を穴埋め",
+      "goal": "リスト項目の並び順を決め、視線導線を設計する",
+      "timeEstimate": 7,
+      "prerequisites": ["Figma"],
+      "flowStage": ["要件"],
+      "checklist": ["並び順を決定","スクショ提出"],
+      "assets": [{"type":"figma","url":"https://figma.com/file/dummy-ia-order"}],
+      "isFree": true,
+      "nextSlug": "ui-model-01",
+      "prevSlug": "ia-msc-01"
+    },
+    {
+      "slug": "ui-model-01",
+      "title": "UIモデリング：再配置トレース＋穴埋め",
+      "goal": "選んだユーザー像に合わせて最小変更で画面を再設計する",
+      "timeEstimate": 10,
+      "prerequisites": ["Figma"],
+      "flowStage": ["UIモデリング"],
+      "checklist": ["優先度順に再配置","文言を1つ短縮","スクショ提出"],
+      "assets": [{"type":"figma","url":"https://figma.com/file/dummy-ui-model"}],
+      "isFree": true,
+      "nextSlug": "visual-01",
+      "prevSlug": "ia-order-01"
+    },
+    {
+      "slug": "visual-01",
+      "title": "ビジュアル適用：トークン（色/タイポ/8px）",
+      "goal": "配布トークンを適用し、見た目の一貫性を通す",
+      "timeEstimate": 8,
+      "prerequisites": ["Figma"],
+      "flowStage": ["ビジュアル"],
+      "checklist": ["色トークン適用","タイポ適用","8px適用"],
+      "assets": [{"type":"figma","url":"https://figma.com/file/dummy-visual"}],
+      "isFree": true,
+      "nextSlug": "state-01",
+      "prevSlug": "ui-model-01"
+    },
+    {
+      "slug": "state-01",
+      "title": "状態設計：ホバー/押下/✓演出",
+      "goal": "押した感・完了感を統一ルールで設計する",
+      "timeEstimate": 8,
+      "prerequisites": ["Figma"],
+      "flowStage": ["ビジュアル"],
+      "checklist": ["ボタン4状態を定義","✓演出を作成","スクショ提出"],
+      "assets": [{"type":"figma","url":"https://figma.com/file/dummy-state"}],
+      "isFree": true,
+      "nextSlug": "compare-01",
+      "prevSlug": "visual-01"
+    },
+    {
+      "slug": "compare-01",
+      "title": "比較学習：完成例と見比べる",
+      "goal": "完成例と自分のUIを比較し、学びを言語化する",
+      "timeEstimate": 6,
+      "prerequisites": [],
+      "flowStage": ["ユーザー理解","UIモデリング","ビジュアル"],
+      "checklist": ["一致/相違をチェック","50字ふりかえり","提出画像を用意"],
+      "assets": [],
+      "isFree": true,
+      "nextSlug": null,
+      "prevSlug": "state-01"
+    }
+  ]
+}

@@ -21,6 +21,7 @@ yarn-error.log*
 dist/
 build/
 out/
+.next/
 
 # Logs
 logs/
@@ -33,3 +34,12 @@ coverage/
 # Temporary files
 tmp/
 temp/
+
+# Next.js
+.next/
+out/
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
