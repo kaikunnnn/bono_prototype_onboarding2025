@@ -12,6 +12,8 @@ export interface Chapter {
   title: string
   goal: string
   timeEstimate: number
+  day: number
+  isSpecialDay?: boolean
   prerequisites: string[]
   flowStage: FlowStage[]
   checklist: string[]
