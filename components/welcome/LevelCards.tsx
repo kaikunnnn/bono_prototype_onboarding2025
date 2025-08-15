@@ -45,19 +45,21 @@ export function LevelCards() {
         <Card
           key={item.id}
           hover
+          padding="lg"
           className={`relative ${
-            level === item.id ? 'ring-2 ring-primary' : ''
+            level === item.id ? 'ring-2 ring-black' : ''
           }`}
         >
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-text">
+          <div className="space-y-space-3">
+            <h3 className="heading-component">
               {item.title}
             </h3>
-            <p className="text-muted text-sm">
+            <p className="body-description">
               {item.description}
             </p>
             <Button
               onClick={() => handleSelect(item.id, item.href)}
+              variant={item.id === 'custom' ? 'secondary' : 'primary'}
               className="w-full"
             >
               {item.id === 'custom' ? '検索して探す' : '今すぐはじめる'}
